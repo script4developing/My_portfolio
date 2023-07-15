@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- скопированные с google шрифты вставляем ниже: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- подключаем созданный нами файл styles.css из папки css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Название закладки в браузере -->
+    <title>My resume</title>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Main content -->
+      <div class="main-content">
+        <!-- About Me -->
+        <div class="about_me-container">
+          <!-- применим отступ вниз, как в макете через about_me-container -->
+          <h2 class="my_profession">Front-End Developer</h2>
+          <h1 class="my_name">OLEKSANDR KRAVETS</h1>
+
+          <p class="my_description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+        </div>
+
+        <!-- My Projects -->
+        <!-- создаём projects-container для отступа текста от нумерации -->
+        <div class="projects-container">
+          <!-- задаём класс для шрифтов и отступов как в макете; повторно использ. "main-content" -->
+          <h3 class="main_content-title">Projects</h3>
+          <ol class="project-list">
+            <!-- создаём class="project-list", чтобы перечисленные проекты сделать не жирными, как в макете -->
+            <li class="project-item">
+              <!-- задаём class="project_item-link", чтобы ссылки сделать не жирными после нумерации -->
+              <a href="https://hellen.p.goit.global/" class="project_item-link"
+                >https://hellen.p.goit.global/
+              </a>
+              <!-- создаём отдельный блок через span class="project_item-description", чтобы текст с точками был как в макете серым -->
+              <span class="project_item-descript">
+                .......................................................[ HTML5,
+                CSS3 ]
+              </span>
+            </li>
+            <li class="project-item">
+              <!-- ставим class="project-item" для того, чтобы пункты сделать жирными -->
+              <!-- задаём class="project_item-link", чтобы ссылки сделать не жирными после нумерации -->
+              <a
+                href="https://cryptohub.p.goit.global/"
+                class="project_item-link"
+                >https://cryptohub.p.goit.global/
+              </a>
+              <!-- создаём отдельный блок через span class="project_item-description", чтобы текст с точками был как в макете серым -->
+              <span class="project_item-descript">
+                .............................................[ JavaScript ]
+              </span>
+            </li>
+            <li class="project-item">
+              <!-- ставим class="project-item" для того, чтобы пункты сделать жирными -->
+              <!-- задаём class="project_item-link", чтобы ссылки сделать не жирными после нумерации -->
+              <a
+                href="https://kidslike.p.goit.global/"
+                class="project_item-link"
+                >https://cryptohub.p.goit.global/
+              </a>
+              <!-- создаём отдельный блок через span class="project_item-description", чтобы текст с точками был как в макете серым -->
+              <span class="project_item-descript">
+                .............................................[ React.js, Node.js
+                ]
+              </span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Work Experience Block -->
+        <!-- создаём projects-container для отступа текста от нумерации -->
+        <!-- переименовываем его в class="work_experience-container" для следования макету -->
+        <div class="work_experience-container">
+          <h3 class="main_content-title">Work Experience</h3>
+
+          <!-- Company 1 -->
+          <div class="work_experiense-distance">
+            <!-- class="work_experiense-distance" для отступа между блоками Опыт в макете -->
+            <h4 class="work_experience-position">
+              Front-End Developer
+              <!-- оборачиваем в span класс, чтобы компании работы были синего цвета -->
+              <span class="work_exp-company">Freelance </span>
+            </h4>
+            <!-- class="work-period" - для отдельного шрифта на дары работы -->
+            <p class="work-period">
+              September 2019 - up to now
+              <!-- черная линия разделения "|"серого текста в датах работы -->
+              <span class="work-period-breaking-line">|</span>
+              Country
+            </p>
+            <!-- задаём class="work_duties-list" для 0 отступа нашего списка работ -->
+            <ul class="work_duties-list">
+              <li class="work-duties">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li class="work-duties">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </li>
+              <li class="work-duties">Risus commodo viverra maecenas.</li>
+              <li class="work-duties">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company 2 -->
+          <div class="work_experiense-distance">
+            <!-- class="work_experiense-distance" для отступа между блоками Опыт в макете -->
+            <h4 class="work_experience-position">
+              Manager
+              <!-- оборачиваем в span класс, чтобы компании работы были синего цвета -->
+              <span class="work_exp-company">Banderogusak & Co. </span>
+            </h4>
+            <!-- class="work-period" - для отдельного шрифта на дары работы -->
+            <p class="work-period">
+              March 2015 - October 2018
+              <!-- черная линия разделения "|"серого текста в датах работы -->
+              <span class="work-period-breaking-line">|</span>
+              Country
+            </p>
+            <!-- задаём class="work_duties-list" для 0 отступа нашего списка работ -->
+            <ul class="work_duties-list">
+              <li class="work-duties">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod labore et dolore magna aliqua.
+              </li>
+              <li class="work-duties">
+                Quis ipsum suspendisse ultrices gravida.
+              </li>
+              <li class="work-duties">Risus commodo viverra maecenas.</li>
+            </ul>
+          </div>
+
+          <!-- Company 3 -->
+          <div class="work_experiense-distance">
+            <!-- class="work_experiense-distance" для отступа между блоками Опыт в макете -->
+            <h4 class="work_experience-position">
+              Manager
+              <!-- оборачиваем в span класс, чтобы компании работы были синего цвета -->
+              <span class="work_exp-company">BestUA Corp. </span>
+            </h4>
+            <!-- class="work-period" - для отдельного шрифта на дары работы -->
+            <p class="work-period">
+              June 2014 - February 2015
+              <!-- черная линия разделения "|"серого текста в датах работы -->
+              <span class="work-period-breaking-line">|</span>
+              Country
+            </p>
+            <!-- задаём class="work_duties-list" для 0 отступа нашего списка работ -->
+            <ul class="work_duties-list">
+              <li class="work-duties">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </li>
+              <li class="work-duties">
+                Quis ipsum suspendisse ultrices gravida.
+              </li>
+              <li class="work-duties">Risus commodo viverra maecenas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <h3 class="main_content-title">Education</h3>
+          <!-- оборачиваем в span класс, чтобы компании работы были синего цвета -->
+          <span class="education">Odessa National Maritime Academy </span>
+          <h5 class="education-input">Management</h5>
+          <p class="work-period">
+            September 2000 - June 2006
+            <!-- черная линия разделения "|"серого текста в датах работы -->
+            <span class="work-period-breaking-line">|</span>
+            UKRAINE
+          </p>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img
+          src="./img/photo.jpg"
+          alt="My Photo is in progress..."
+          class="my_photo"
+        />
+        <div class="sidebar-container">
+          <!-- Contacts -->
+          <div class="contacts-container">
+            <h3 class="sidebar-title">Contacts</h3>
+            <!-- чтобы С и Е не имели пробела (см. css) -->
+            <p class="contacts-item">
+              <!-- жирная буква С; пробел после </span> -->
+              <span class="contacts-type">C: </span>
+              <!-- используем для телефона др.цвет (см. css) contacts-number -->
+              <a href="tel:+38063****51" class="contacts-number">
+                +38 063 ** *** 51</a
+              >
+            </p>
+            <!-- чтобы С и Е не имели пробела (см. css) -->
+            <p class="contacts-item">
+              <!-- жирная буква E; пробел после </span> -->
+              <span class="contacts-type">E: </span>
+              <!-- используем для почты др.цвет (см. css) contacts-email -->
+              <a
+                href="mailto:script.developing@gmail.com"
+                class="contacts-email"
+                >script.developing@gmail.com</a
+              >
+            </p>
+          </div>
+          <!-- контейнер skill-row-zoom для адаптивной вёрстки при уменьшении экрана -->
+          <div class="skill-row-zoom">
+            <!-- Tech Skills -->
+            <div class="tech_skills-container">
+              <h3 class="sidebar-title">Tech Skills</h3>
+              <!-- убираем отступ точек перечня skills (skills-list .css)-->
+              <ul class="skills-list">
+                <!-- задаём класс для др.цвета точек перечня, присваивая класс skills-list-item -->
+                <li class="skills-list-item">
+                  <!-- заворачиваем в span class="skills-list-text", чтобы у текста был др.цвет, чем у точек -->
+                  <span class="skills-list-text">HTML5</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">CSS3</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">GIT</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">WebPack</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">JavaScript</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">React.js</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">Node.js</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="soft_skills-container">
+              <h3 class="sidebar-title">Soft Skills</h3>
+              <!-- убираем отступ точек перечня skills (skills-list .css)-->
+              <ul class="skills-list">
+                <!-- задаём класс для др.цвета точек перечня, присваивая класс skills-list-item -->
+                <li class="skills-list-item">
+                  <!-- заворачиваем в span class="skills-list-text", чтобы у текста был др.цвет, чем у точек -->
+                  <span class="skills-list-text">Scrum</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">Agile</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">GTD</span>
+                </li>
+                <li class="skills-list-item">
+                  <span class="skills-list-text">Teamwork</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
